@@ -13,13 +13,11 @@
         <h1>+Saúde</h1>
         <h3>O seu atendimento online</h3>
     </header>
-      
+    <img src="imagens/censurado2720853912529.webp" alt="+Saúde" class="backgroundIMG">
     <div class="nav">
         <ul>
             <li><abbr title="Meus Dados Cadastrais">Perfil</abbr></li>
             <li><abbr title="Faça seu Cadastro"><a href="cadastro.html">Cadastre-se</a></abbr></li>
-            <li><abbr title="Agenda de Consultas Médicas">Agenda</abbr></li>
-            <li><abbr title="Médicos Disponiveis no Posto de Atendimento">Especialistas</abbr></li>
             <li><abbr title="Localização/Contato dos Postos de Atendimento">Postos</abbr></li>
             <li><abbr title="Medicamentos">Farmácia</abbr></li>
         </ul>
@@ -30,7 +28,18 @@
             <input type="text" id="login" list="login" placeholder="Digite o Seu CPF"><br><br>
             <label for="senha">Senha:</label>
             <input type="password" id="senha" senha="senha" placeholder="Digite a Senha"><br><br>
+            <script>
+              function myFunction() {
+  var x = document.getElementById("myInput");
+  if (x.type === "senha") {
+    x.type = "text";
+  } else {
+    x.type = "senha";
+  }
+}
+            </script>
             <input type="submit" value="Entrar"><br><br>
+            <script src="verificador-usuario.js"></script>
             <a href="troca-senha.html">Esqueceu a Senha?</a>
             <input type="button" value="Cadastrar"></a>
           </form>
